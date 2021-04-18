@@ -1,0 +1,45 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>書籍管理システム</title>
+</head>
+
+<body>
+  <h1>書籍検索</h1>
+  <form name="form1" action="/cgi-bin/search.py" method="POST">
+    キーワードを入力して下さい
+    <input type="text" name="param1" />
+    <script language="javascript">
+      //function check() {
+        //var param = document.form1.param1.value;
+        //if (param == '') {
+          //alert("値を入力してください。");
+          //return false;
+        //} 
+        //return true;
+      //}
+    </script>
+    <button type="submit" name="submit" onclick="return confirm('実行しても良いですか?'), check();">送信</button>
+  </form>
+
+
+  <h1>書籍登録</h1>
+  <form name="form2" action="/cgi-bin/regist.py" method="POST"> 
+    書籍情報を入力してください
+    <br>ID<input type="text" name="param2" />
+    <br> タイトル<input type="text" name="param3" />
+    <br> 著者<input type="text" name="param4" />
+    <br> 出版社<input type="text" name="param5" />
+    <br> 価格<input type="text" name="param6" />
+    <br> ISBM<input type="text" name="param7" />
+    <br><button type="submit" name="submit" onclick="return confirm('実行しても良いですか?'), check();">送信</button>
+  </form>
+</body>
+
+<h1>書籍情報の削除</h1>
+  <form name="form3" action="/cgi-bin/delete.py" method="POST">
+    IDを入力してください
+    <input type="text" name="param8" />
+    <button type="submit" name="submit" onclick="return confirm('実行しても良いですか?'), check();">送信</button>
+  </form>
+</html>
