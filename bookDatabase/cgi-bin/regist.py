@@ -11,7 +11,7 @@ param_str5 = form.getvalue('param5','')
 param_str6 = form.getvalue('param6','')
 param_str7 = form.getvalue('param7','')
 
-db_path = "cgi-bin/bookdb.db"			# データベースファイル名を指定
+db_path = "bookdb.db"			# データベースファイル名を指定
 
 con = sqlite3.connect(db_path)	# データベースに接続
 con.text_factory = str
@@ -35,5 +35,5 @@ print("が追加されました")
 
 con.commit() 
 con.close()
-print("<a href=\"../finalReport.html\" target=\"_blank\">戻る")
+print("<a href=\"../finalReport.html\">戻る")
 print("</html>")

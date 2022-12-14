@@ -8,7 +8,7 @@ form = cgi.FieldStorage()
 param_str1 = form.getvalue('param1','')
 
 
-db_path = "cgi-bin/bookdb.db"			# データベースファイル名を指定
+db_path = "bookdb.db"			# データベースファイル名を指定
 
 con = sqlite3.connect(db_path)	# データベースに接続
 con.text_factory = str
@@ -46,4 +46,5 @@ except sqlite3.Error as e:			# エラー処理
 con.commit()
 con.close()
 
+print("<a href=\"../finalReport.html\">戻る")
 print("</html>")

@@ -8,7 +8,7 @@ form = cgi.FieldStorage()
 param_str8 = form.getvalue('param8','')
 
 
-db_path = "cgi-bin/bookdb.db"			# データベースファイル名を指定
+db_path = "bookdb.db"			# データベースファイル名を指定
 
 con = sqlite3.connect(db_path)	# データベースに接続
 con.text_factory = str
@@ -31,5 +31,6 @@ print("が削除されました")
 
 con.commit() 
 con.close()
-print("<a href=\"../finalReport.html\" target=\"_blank\">戻る")
+
+print("<a href=\"../finalReport.html\">戻る")
 print("</html>")
