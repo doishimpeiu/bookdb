@@ -45,5 +45,5 @@ except sqlite3.Error as e:			# エラー処理
 
 con.commit()
 con.close()
-print("<a href=\"../finalReport.html\" target=\"_blank\">戻る")
+
 print("</html>")
