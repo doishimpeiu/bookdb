@@ -1,0 +1,36 @@
+body {
+  background-color: white;
+  font-family: Verdana, sans-serif;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+}
+
+.search {
+  /* width: 400px; */
+  margin-left: auto;
+  margin-right: auto;
+  /* display: flex; */
+  align-items: center;
+  margin-top: 20;
+  border-bottom: 1px solid gray; 
+}
+
+.regist {
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    margin-top: 20;
+    border-bottom: 1px solid gray; 
+}
+
+.regist > br {
+  padding-bottom: 5;
+}
+
+.delete {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  margin-top: 20;
+}

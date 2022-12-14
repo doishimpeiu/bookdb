@@ -35,5 +35,5 @@ print("が追加されました")
 
 con.commit() 
 con.close()
-
+print("<a href=\"../finalReport.html\" target=\"_blank\">戻る")
 print("</html>")

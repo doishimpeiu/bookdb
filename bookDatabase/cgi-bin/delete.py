@@ -31,5 +31,5 @@ print("が削除されました")
 
 con.commit() 
 con.close()
-
+print("<a href=\"../finalReport.html\" target=\"_blank\">戻る")
 print("</html>")
